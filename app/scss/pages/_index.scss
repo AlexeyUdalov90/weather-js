@@ -1,3 +1,11 @@
-h1 {
+$font-size: 1rem;
+$font-color: Green;
+
+html {
+    font-size: $font-size;
+    color: $font-color;
+}
+
+p {
   color: aqua;
 }
