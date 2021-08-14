@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -17,15 +17,20 @@ module.exports = {
         template: path.resolve(__dirname, './app/index.html'),
         filename: 'index.html',
     }),
-    new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
+    // new CleanWebpackPlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
 ],
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['babel-preset-env']
+          }
+        },
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
@@ -42,11 +47,11 @@ module.exports = {
     ],
   },
   devServer: {
-    historyApiFallback: true,
-    contentBase: path.resolve(__dirname, './dist'),
     open: true,
-    compress: true,
-    hot: true,
-    port: 8080,
+    // historyApiFallback: true,
+    // contentBase: path.resolve(__dirname, './dist'),
+    // compress: true,
+    // hot: true,
+    // port: 8080,
   },
 }
