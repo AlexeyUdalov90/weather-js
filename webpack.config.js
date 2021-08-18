@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: { 
@@ -16,9 +16,10 @@ module.exports = {
         title: 'webpack Boilerplate',
         template: path.resolve(__dirname, './app/index.html'),
         filename: 'index.html',
+        inject: 'body',
     }),
-    // new CleanWebpackPlugin(),
-    // new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin(),
 ],
   module: {
     rules: [
@@ -42,16 +43,11 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
     },
     ],
   },
   devServer: {
     open: true,
-    // historyApiFallback: true,
-    // contentBase: path.resolve(__dirname, './dist'),
-    // compress: true,
-    // hot: true,
-    // port: 8080,
   },
 }
