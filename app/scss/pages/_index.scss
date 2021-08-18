@@ -1,0 +1,19 @@
+$font-size: 1rem;
+$font-color: Green;
+
+html {
+    font-size: $font-size;
+    color: $font-color;
+}
+
+p {
+  color: green;
+}
+
+.heavy {
+  color: purple;
+} 
+
+.rotate {
+  transform: rotate(45deg);
+}
