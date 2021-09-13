@@ -6,30 +6,42 @@ html {
     color: $font-color;
 }
 
-.test__api-city,
-.test__api-degree,
-.test__api-weather {
- width: 150px;
- height: 50px;
-
- font-size: 16px;
- line-height: 45px;
- font-weight: bold;
- text-align: center;
- vertical-align: middle;
+body {
+  display: flex;
+  justify-content: center;
 }
 
-.test__api-city {
-  background-color: #AFEEEE;
-  color: purple;
-}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
 
-.test__api-degree {
-  background-color: #FFFACD;
-  color: #FF4500;
-}
+  width: 375px;
+  padding: 15px;
 
-.test__api-weather {
-  background-color: #808080;
-  color: #DC143C;
+  background-color: #95B46A;
+
+  &__search-input {
+    padding: 13px 42px 13px 17px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 6px;
+
+    background: url("../assets/images/loupe.svg") #F7FFF6 no-repeat 95% 50%;
+  }
+
+  &__menu-button {
+    width: 46px;
+    height: 46px;
+
+    background: #F7FFF6;
+    border: none;
+    border-radius: 6px;
+
+    background: url("../assets/images/like.svg") #F7FFF6 no-repeat 50% 50%;
+  }
 }
