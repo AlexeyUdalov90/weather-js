@@ -6,14 +6,30 @@ html {
     color: $font-color;
 }
 
-p {
-  color: green;
+.test__api-city,
+.test__api-degree,
+.test__api-weather {
+ width: 150px;
+ height: 50px;
+
+ font-size: 16px;
+ line-height: 45px;
+ font-weight: bold;
+ text-align: center;
+ vertical-align: middle;
 }
 
-.heavy {
+.test__api-city {
+  background-color: #AFEEEE;
   color: purple;
-} 
+}
 
-.rotate {
-  transform: rotate(45deg);
+.test__api-degree {
+  background-color: #FFFACD;
+  color: #FF4500;
+}
+
+.test__api-weather {
+  background-color: #808080;
+  color: #DC143C;
 }

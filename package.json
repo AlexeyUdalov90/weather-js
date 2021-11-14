@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
+    "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
