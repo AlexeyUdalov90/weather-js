@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d07d73-fb0f-4bea-8605-00efe1d7b7d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/Partly-cloudy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/Partly-cloudy.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/core/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/core/_default.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/core/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/core/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/pages/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/pages/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,9 @@
       <workItem from="1636172555446" duration="3816000" />
       <workItem from="1636176414714" duration="5965000" />
       <workItem from="1636191517847" duration="5000" />
-      <workItem from="1636865951890" duration="12597000" />
+      <workItem from="1636865951890" duration="14483000" />
+      <workItem from="1636896693897" duration="4000" />
+      <workItem from="1638075982841" duration="2263000" />
     </task>
     <servers />
   </component>
