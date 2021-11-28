@@ -1,6 +1,7 @@
 .content-wrapper {
   position: relative;
 
+  padding-bottom: 15px;
   width: 375px;
 }
 
@@ -8,8 +9,7 @@
 .page-header {
   display: grid;
   justify-content: center;
-  padding: 15px 15px 0 15px;
-  margin-bottom: 10px;
+  margin: 15px 0 10px 0;
 
   &__wrapper {
     display: grid;
@@ -65,8 +65,6 @@
   position: relative;
 
   display: grid;
-
-  margin: 0 15px 15px 15px;
 
   //Hidden error block
   &__error {
@@ -194,31 +192,31 @@
 
     width: 345px;
   }
+}
 
-  &__small-display {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 30px;
+.small-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 30px;
 
-    width: 165px;
-    height: 165px;
-    padding: 10px;
+  width: 165px;
+  height: 165px;
+  padding: 10px;
 
-    background-color: #F7FFF6;
-    border-radius: 6px;
-  }
+  background-color: #F7FFF6;
+  border-radius: 6px;
 
-  &__small-display-condition-image {
+  &__condition-image {
     align-self: center;
   }
 
-  &__small-display-condition-image,
-  &__small-display-temperature {
+  &__condition-image,
+  &__temperature {
     grid-column: 1 / 3;
     justify-self: center;
   }
 
-  &__small-display-temperature {
+  &__temperature {
     width: 40px;
 
     font-size: 36px;
@@ -228,8 +226,8 @@
     align-self: center;
   }
 
-  &__small-display-date,
-  &__small-display-time {
+  &__date,
+  &__time {
     align-self: end;
 
     font-size: 18px;
@@ -237,11 +235,10 @@
     color: #000000;
   }
 
-  &__small-display-time {
+  &__time {
     justify-self: end;
   }
 }
-
 
 
 
