@@ -6,11 +6,67 @@
   <title>Weather JS</title>
 </head>
 <body>
-  <h1>Hello world!</h1>
-  <div class="test">
-    <div class="test__api-city"></div>
-    <div class="test__api-degree"></div>
-    <div class="test__api-weather"></div>
-  </div>
+<div class="content-wrapper">
+  <ul class="popup-menu">
+    <li class="popup-menu__item">
+      <p class="popup-menu__city">Москва</p>
+      <button class="popup-menu__button"></button>
+    </li>
+  </ul>
+  <header class="page-header">
+    <form action="" class="page-header__wrapper">
+      <input type="text" placeholder="Название города" class="page-header__search-input">
+      <button class="page-header__menu-button"></button>
+    </form>
+  </header>
+  <main class="content">
+    <section class="content__error">
+      <div><span>Упс!</span><br>Что то пошло не так!</div>
+    </section>
+    <section class="content__main-info-display">
+      <div class="content__main-display-condition">
+        <button class="content__main-display-condition-button"></button>
+        <img src="../app/assets/images/weather-condition.svg" alt="" class="content__main-display-condition-image">
+        <div class="content__main-display-condition-text">ясно</div>
+      </div>
+      <div class="content__main-display-city">Москва</div>
+      <div class="content__main-display-temperature">24&#176</div>
+      <div class="content__main-display-sunrise">
+        <img src="../app/assets/images/sunrise.svg" alt="" class="content__main-display-sunrise-image">
+        <div class="content__main-display-sunrise-text">06:00</div>
+      </div>
+      <div class="content__main-display-sunset">
+        <img src="../app/assets/images/sunset.svg" alt="" class="content__main-display-sunset-image">
+        <div class="content__main-display-sunset-text">18:10</div>
+      </div>
+    </section>
+    <section class="content__small-displays">
+      <section class="small-display">
+        <img src="../app/assets/images/Partly-cloudy.svg" alt="" class="small-display__condition-image">
+        <div class="small-display__temperature">20&#176</div>
+        <div class="small-display__date">19.08</div>
+        <div class="small-display__time">15:00</div>
+      </section>
+      <section class="small-display">
+        <img src="../app/assets/images/cloudly.svg" alt="" class="small-display__condition-image">
+        <div class="small-display__temperature">18&#176</div>
+        <div class="small-display__date">19.08</div>
+        <div class="small-display__time">18:00</div>
+      </section>
+      <section class="small-display">
+        <img src="../app/assets/images/rainy.svg" alt="" class="small-display__condition-image">
+        <div class="small-display__temperature">15&#176</div>
+        <div class="small-display__date">19.08</div>
+        <div class="small-display__time">21:00</div>
+      </section>
+      <section class="small-display">
+        <img src="../app/assets/images/rain-with-lightning.svg" alt="" class="small-display__condition-image">
+        <div class="small-display__temperature">12&#176</div>
+        <div class="small-display__date">20.08</div>
+        <div class="small-display__time">00:00</div>
+      </section>
+    </section>
+  </main>
+</div>
 </body>
 </html>

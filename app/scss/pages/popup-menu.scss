@@ -1,0 +1,39 @@
+.popup-menu {
+  position: absolute;
+  left: 75px;
+
+  display: none;
+  margin: 0;
+  padding: 20px 15px;
+  width: 300px;
+  height: 100%;
+
+  z-index: 1;
+
+  background-color: #A8D5E2;
+  border-radius: 6px 0 0 6px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+  }
+
+  &__city {
+    margin: 0;
+    width: 220px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__button {
+    width: 28px;
+    height: 28px;
+
+    background: url(../assets/images/close.svg) #273043 no-repeat 50% 50%;
+    border: none;
+    border-radius: 4px;
+  }
+}
